@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #DD1155; */
 }
 
 body {
   background: 
-      url('/public/SL-072622-51930-14\ 2.png') center/contain no-repeat,
+      url('/public/bafcfe4b9f9dbade3d06d58c62e406f572247dfb.png') center/contain repeat,
      #DD1155;
+    /* background-color: #DD1155; */
 }
 
 .text-header {
@@ -138,6 +138,39 @@ header .border-header span:nth-child(3) {
   width: .7rem;
   height: .7rem;
   background-color: #D6D8D4;
+}
+
+.profile-jeffi {
+  padding: 1rem 7%;
+  display: flex;
+  flex-direction: column; 
+  color: #a7ce64;
+  text-align: justify;
+}
+
+.profile-jeffi .description {
+  padding: 0 3%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.profile-jeffi .description img{
+  width: 50%;
+  align-self: center;
+  margin: 2rem 0 ;
+}
+
+.profile-jeffi .profile-header{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.profile-jeffi .profile-header h2{
+  font-size: 7vw;
+  font-family: "Sometype Mono", monospace;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 681px) {
