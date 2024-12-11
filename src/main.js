@@ -147,3 +147,24 @@ boxes.forEach((box, index) => {
     lastActiveProfile = profiles[index];
   });
 });
+
+const popUp = document.querySelector('.pop-up');
+const openBtn = document.querySelector('.open-popup-btn');
+const closeBtn = document.querySelector('.close-popup-btn');
+
+// Open pop-up
+openBtn.addEventListener('click', () => {
+  popUp.style.display = 'flex';
+});
+
+// Close pop-up
+closeBtn.addEventListener('click', () => {
+  popUp.style.display = 'none';
+});
+
+// Close pop-up by clicking outside the container
+popUp.addEventListener('click', (e) => {
+  if (e.target === popUp) {
+    popUp.style.display = 'none';
+  }
+});
