@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #DD1155; */
+}
+
+body {
+  background: 
+      url('/public/SL-072622-51930-14\ 2.png') center/contain no-repeat,
+     #DD1155;
+}
+
+.text-header {
+  text-align: center;
+  font-size: 15vw;
+  font-family: "Sometype Mono", monospace;
+  font-weight: lighter;
+  color: #a7ce64;
+  padding: .7rem 0;
+}
+
+header div {
+  display: flex;
+  gap: .5rem;
+}
+
+header .border-header span:first-child {
+  width: 35%;
+  height: .2rem;
+  background-color: #D6D8D4;
+}
+
+header .border-header span:nth-child(2) {
+  width: 8%;
+  height: .2rem;
+  background-color: #D6D8D4;
+}
+
+header .border-header span:nth-child(3) {
+  width: 2%;
+  height: .2rem;
+  background-color:#D6D8D4;
+  margin-left: .7rem;
+}
+
+.hamburgerButton {
+  padding: .2rem;
+  color: #D6D8D4;
+}
+
+.hamburgerButton span {
+  color: #a7ce64;
+}
+
+.hero {
+  padding: 1rem 4% 7%;
+  display: flex;
+  flex-direction: column; 
+  gap: 2rem;
+}
+
+.hero .hero-description p:last-child {
+  margin-top: 1rem;
+}
+
+.hero .hero-description p {
+  color: #a7ce64;
+  text-align: justify;
+}
+
+.hero .hero-image {
+  width: 50%;
+  align-self: center;
+}
+
+.hero .hero-image img {
+  width: 100%;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 1%;
+  margin: 0;
+  gap: .5rem;
+}
+
+.profile .box {
+  display: flex;
+  justify-content: center;
+}
+
+.profile div .name {
+  position: relative;
+  font-family: "Space Grotesk", sans-serif;
+  width: 13rem;
+  height: 13rem;
+}
+
+.profile div .name .profile-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .name h2:first-child {
+  margin-top: .8rem;
+}
+
+.profile .name .profile-name h2 {
+  font-size: 2.5rem; 
+  color: #a7ce64;
+  display: block;
+  font-weight: 500;
+}
+
+.profile .box:not(:nth-child(2)) .name .profile-name h2 {
+  width: 6rem;
+}
+
+.profile .box:nth-child(3) .name .profile-name h2,
+.profile .box:nth-child(5) .name .profile-name h2,
+.profile .box:nth-child(6) .name .profile-name h2 {
+  width: 9rem;
+}
+
+.profile .name p {
+  align-self: self-start;
+  font-size: 2rem; 
+  color: #a7ce64;
+}
+
+.profile .name .white-box {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: .7rem;
+  height: .7rem;
+  background-color: #D6D8D4;
+}
+
+@media screen and (min-width: 681px) {
+    html {
+        font-size: 120%;
+    }
+
+    .text-header {
+        font-size: 16vw;
+    }
+
+    .profile {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 788px) {
+  .hamburgerButton {
+      font-size: 1.4rem;
+  }
+  .hero {
+      padding: 1rem 4% 7% 8%;
+      flex-direction: row;
+      gap: 5rem;
+  }
+
+  .hero .hero-image{
+      width: 25%;
+      align-self: self-start;
+  }
+
+  .hero-description {
+      width: 75%;
+  }
+
+  .profile {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .profile .name{
+      flex: 15rem 2;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+    html {
+      font-size: 150%;
+    }
+}
